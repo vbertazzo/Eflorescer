@@ -2,6 +2,7 @@
 	<div>
 		<the-header></the-header>
 		<the-hero></the-hero>
+		<product-list></product-list>
 		<fun-fact></fun-fact>
 	</div>
 </template>
@@ -9,6 +10,7 @@
 <script setup>
 import TheHeader from './components/layout/TheHeader.vue'
 import TheHero from './components/layout/TheHero.vue'
+import ProductList from './components/products/ProductList.vue'
 import FunFact from './components/FunFact.vue'
 
 // This starter template is using Vue 3 experimental <script setup> SFCs
