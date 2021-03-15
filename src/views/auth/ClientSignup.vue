@@ -4,30 +4,32 @@
 			@submit.prevent="submitForm"
 			class="p-4 flex flex-col justify-center items-center rounded-md bg-white shadow-sm"
 		>
-			<h2 class="text-lg text-center">Registrar</h2>
+			<h2 class="text-lg text-center text-secondary">Registrar</h2>
 			<div class="mt-4 flex flex-col space-y-2">
 				<div>
-					<label for="email">Email:</label>
+					<label for="email" class="text-secondary">Email:</label>
 					<input
-						class="mt-1 py-1 px-2 border-2 border-gray-200 w-full focus:border-primary"
+						class="mt-1 py-1 px-2 text-secondary w-full border-2 border-gray-200 focus:border-primary"
 						type="email"
 						id="email"
 						v-model.trim="email"
 					/>
 				</div>
 				<div>
-					<label for="password">Senha:</label>
+					<label for="password" class="text-secondary">Senha:</label>
 					<input
-						class="mt-1 py-1 px-2 border-2 border-gray-200 w-full focus:border-primary"
+						class="mt-1 py-1 px-2 text-secondary w-full border-2 border-gray-200 focus:border-primary"
 						type="password"
 						id="password"
 						v-model="password"
 					/>
 				</div>
 				<div>
-					<label for="confirm-password">Confirme sua senha:</label>
+					<label for="confirm-password" class="text-secondary"
+						>Confirme sua senha:</label
+					>
 					<input
-						class="mt-1 py-1 px-2 border-2 border-gray-200 w-full focus:border-primary"
+						class="mt-1 py-1 px-2 text-secondary w-full border-2 border-gray-200 focus:border-primary"
 						type="password"
 						id="confirm-password"
 						v-model="confirmPassword"
