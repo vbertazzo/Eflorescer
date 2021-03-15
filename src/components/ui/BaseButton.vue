@@ -21,7 +21,7 @@ import { computed, defineProps } from 'vue'
 
 const mode = computed(() => {
 	if (props.mode === null) {
-		return 'bg-primary hover:bg-primary-dark'
+		return 'bg-primary hover:bg-primary-dark text-secondary font-semibold'
 	}
 
 	if (props.mode === 'flat') {
