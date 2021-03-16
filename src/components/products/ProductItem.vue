@@ -11,12 +11,14 @@
 			<p class="text-sm">{{ product.name }}</p>
 			<div class="mt-2 flex justify-between items-center">
 				<p>{{ formatPrice(product.price) }}</p>
-				<button
-					class="h-10 w-10 rounded-md bg-primary hover:bg-primary-dark shadow-sm"
+				<base-button
+					mode="symbol"
 					title="Adicionar ao carrinho"
+					@click="addToCart"
+					:disabled="disabled"
 				>
 					<svg
-						class="text-secondary hover:text-tertiary"
+						class="h-8 w-8"
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
@@ -29,17 +31,37 @@
 							d="M12 6v6m0 0v6m0-6h6m-6 0H6"
 						/>
 					</svg>
-				</button>
+				</base-button>
 			</div>
 		</div>
 	</li>
 </template>
 
 <script setup>
-import { defineProps } from 'vue'
+import { defineProps, ref, onUnmounted } from 'vue'
+import { useStore } from 'vuex'
+
+const store = useStore()
 
 const props = defineProps({
 	product: Object
+})
+
+const disabled = ref(false)
+let timeout = null
+
+const addToCart = () => {
+	disabled.value = true
+
+	timeout = setTimeout(() => {
+		disabled.value = false
+	}, 300)
+
+	store.dispatch('addItem', props.product)
+}
+
+onUnmounted(() => {
+	clearTimeout(timeout)
 })
 
 const formatPrice = price => {

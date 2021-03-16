@@ -47,7 +47,7 @@ const router = createRouter({
 				}
 			}
 		},
-		{ path: '/carrinho', redirect: '/' }
+		{ path: '/carrinho', component: () => import('./views/TheCart.vue') }
 	]
 })
 
