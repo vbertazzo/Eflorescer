@@ -30,7 +30,7 @@ export default {
 			throw error
 		}
 
-		const { idToken, localId } = responseData
+		const { idToken, localId, email } = responseData
 
 		const expiresIn = +responseData.expiresIn * 1000
 		const expirationDate = new Date().getTime() + expiresIn
@@ -38,6 +38,7 @@ export default {
 		localStorage.setItem('token', idToken)
 		localStorage.setItem('userId', localId)
 		localStorage.setItem('tokenExpiration', expirationDate)
+		localStorage.setItem('email', email)
 
 		timer = setTimeout(() => {
 			context.dispatch('logout', true)
@@ -45,13 +46,15 @@ export default {
 
 		context.commit('setUser', {
 			token: idToken,
-			userId: localId
+			userId: localId,
+			email
 		})
 	},
 	tryLogin (context) {
 		const token = localStorage.getItem('token')
 		const userId = localStorage.getItem('userId')
 		const tokenExpiration = localStorage.getItem('tokenExpiration')
+		const email = localStorage.getItem('email')
 
 		const expiresIn = +tokenExpiration - new Date().getTime()
 
@@ -66,7 +69,8 @@ export default {
 		if (token && userId) {
 			context.commit('setUser', {
 				token,
-				userId
+				userId,
+				email
 			})
 		}
 	},
@@ -74,12 +78,14 @@ export default {
 		localStorage.removeItem('userId')
 		localStorage.removeItem('token')
 		localStorage.removeItem('tokenExpiration')
+		localStorage.removeItem('email')
 
 		clearTimeout(timer)
 
 		context.commit('setUser', {
 			token: null,
-			userId: null
+			userId: null,
+			email: null
 		})
 
 		if (autoLogout) {

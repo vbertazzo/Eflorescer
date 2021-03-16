@@ -10,6 +10,13 @@ const router = createRouter({
 			component: () => import('./views/auth/ClientSignup.vue'),
 			meta: {
 				requiresUnauth: true
+			},
+			beforeEnter (_, _2, next) {
+				if (store.getters.isAuthenticated) {
+					next('/')
+				} else {
+					next()
+				}
 			}
 		},
 		{
@@ -17,18 +24,31 @@ const router = createRouter({
 			component: () => import('./views/auth/ClientLogin.vue'),
 			meta: {
 				requiresUnauth: true
+			},
+			beforeEnter (_, _2, next) {
+				if (store.getters.isAuthenticated) {
+					next('/')
+				} else {
+					next()
+				}
+			}
+		},
+		{
+			path: '/perfil',
+			component: () => import('./views/auth/ClientProfile.vue'),
+			meta: {
+				requiresAuth: true
+			},
+			beforeEnter (_, _2, next) {
+				if (!store.getters.isAuthenticated) {
+					next('/login')
+				} else {
+					next()
+				}
 			}
 		},
 		{ path: '/carrinho', redirect: '/' }
 	]
-})
-
-router.beforeEach((to, _, next) => {
-	if (to.meta.requiresUnauth && store.getters.isAuthenticated) {
-		next('/')
-	}
-
-	next()
 })
 
 export default router
