@@ -16,6 +16,7 @@ export default {
 		}
 
 		context.commit('addItem', { ...payload, quantity: 1 })
+		context.dispatch('saveCart')
 	},
 	removeItem (context, payload) {
 		const { id } = payload
@@ -25,6 +26,7 @@ export default {
 		)
 
 		context.commit('removeItem', { index: indexOfItemInCart })
+		context.dispatch('saveCart')
 	},
 	updateQuantity (context, payload) {
 		const { id, qty, mode } = payload
@@ -38,5 +40,16 @@ export default {
 			index: indexOfItemInCart,
 			quantity: qty
 		})
+		context.dispatch('saveCart')
+	},
+	saveCart (context) {
+		localStorage.setItem('cart', JSON.stringify(context.state.cart))
+	},
+	loadCart (context) {
+		const cart = JSON.parse(localStorage.getItem('cart'))
+
+		if (cart) {
+			context.commit('setCart', cart)
+		}
 	}
 }

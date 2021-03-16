@@ -16,5 +16,8 @@ export default {
 		if (mode === 'replace') {
 			state.cart[index].quantity = quantity
 		}
+	},
+	setCart (state, payload) {
+		state.cart = payload
 	}
 }
