@@ -2,7 +2,7 @@
 	<header
 		class="w-full h-16 px-3 flex justify-center items-center bg-primary border-b-4 border-secondary"
 	>
-		<nav class="w-10/12 m-auto flex justify-between items-center">
+		<nav class="w-10/12 m-auto flex justify-between items-center 2xl:w-8/12">
 			<router-link to="/">
 				<img
 					:src="Logo"

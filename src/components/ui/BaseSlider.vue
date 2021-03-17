@@ -2,13 +2,15 @@
 	<div>
 		<div>
 			<div
-				class="absolute bottom-0 mx-2 mb-5 px-4 py-3 bg-primary-light bg-opacity-90 shadow-md xl:mb-10 xl:ml-10"
+				class="absolute bottom-0 mx-2 mb-5 px-4 py-3 bg-primary-light bg-opacity-90 shadow-md xl:mb-10 xl:ml-10 2xl:left-1/4 2xl:-ml-16"
 				:class="{ hidden: imageOnly }"
 			>
-				<h2 class="text-base font-black uppercase text-secondary xl:text-xl">
+				<h2
+					class="text-base font-black uppercase text-secondary xl:text-xl 2xl:text-2xl"
+				>
 					{{ currentItem.title }}
 				</h2>
-				<p class="mt-1 leading-5 text-secondary xl:text-lg">
+				<p class="mt-1 leading-5 text-secondary xl:text-lg 2xl:text-xl">
 					{{ currentItem.subtitle }}
 				</p>
 			</div>
@@ -21,10 +23,10 @@
 		</div>
 		<button
 			@click="previous"
-			class="absolute h-8 w-8 top-1/2 transform -translate-y-1/2 xl:h-10 xl:w-10"
+			class="absolute h-8 w-8 top-1/2 transform -translate-y-1/2 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 2xl:left-2 "
 		>
 			<svg
-				class="text-secondary hover:text-green-500"
+				class="text-secondary hover:text-primary-dark"
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
 				viewBox="0 0 24 24"
@@ -40,10 +42,10 @@
 		</button>
 		<button
 			@click="next"
-			class="absolute h-8 w-8 top-1/2 right-0 transform -translate-y-1/2 xl:h-10 xl:w-10"
+			class="absolute h-8 w-8 top-1/2 right-0 transform -translate-y-1/2 xl:h-10 xl:w-10 2xl:h-12 2xl:w-12 2xl:right-2"
 		>
 			<svg
-				class="text-secondary hover:text-green-500"
+				class="text-secondary hover:text-primary-dark"
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
 				viewBox="0 0 24 24"
