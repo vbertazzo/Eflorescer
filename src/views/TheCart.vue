@@ -21,13 +21,18 @@
 			>
 		</div>
 		<div class="w-full max-w-lg">
-			<ul class="space-y-2">
+			<transition-group
+				class="space-y-2"
+				tag="ul"
+				leave-active-class="absolute"
+				move-class="transition-transform duration:1000 ease-linear"
+			>
 				<cart-item
 					v-for="product in cart"
 					:key="product.id"
 					:product="product"
 				></cart-item>
-			</ul>
+			</transition-group>
 		</div>
 		<div
 			class="mt-4 p-4 flex flex-col justify-between rounded-md bg-white shadow-sm w-full max-w-lg"
