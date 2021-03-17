@@ -3,7 +3,7 @@
 		class="p-8 my-6 bg-primary-light shadow-md flex flex-col items-center"
 	>
 		<div
-			class="p-4 flex flex-col justify-center items-center rounded-md bg-white shadow-sm md:w-3/4"
+			class="p-4 flex flex-col justify-center items-center rounded-md bg-white shadow-sm md:w-3/4 xl:w-2/4 2xl:w-2/5"
 		>
 			<h2 class="text-lg text-center text-secondary">Perfil</h2>
 			<div class="mt-4 flex space-x-2">

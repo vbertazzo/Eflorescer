@@ -4,7 +4,7 @@
 	>
 		<form
 			@submit.prevent="submitForm"
-			class="p-4 flex flex-col justify-center items-center rounded-md bg-white shadow-sm md:w-3/4"
+			class="p-4 flex flex-col justify-center items-center rounded-md bg-white shadow-sm md:w-3/4 xl:w-2/4 2xl:w-2/5"
 		>
 			<h2 class="text-lg text-center text-secondary">Registrar</h2>
 			<div class="mt-4 flex flex-col space-y-2">

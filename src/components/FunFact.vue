@@ -7,7 +7,7 @@
 			src="../assets/TeaDraw@2x.png"
 			alt="Amigas bebendo chá"
 		/>
-		<div class="mx-8 mt-8 flex flex-col justify-center md:mt-0 xl:w-96">
+		<div class="mx-8 mt-8 flex flex-col justify-center md:mt-0 md:w-72 xl:w-96">
 			<h3 class="text-xl font-serif xl:text-2xl 2xl:text-3xl">Você sabia?</h3>
 			<p class="mt-2 text-sm font-light text-justify tracking-wider xl:text-lg">
 				O Rooibos tem-se tornado popular devido ao seu alto nível de
