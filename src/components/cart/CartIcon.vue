@@ -18,9 +18,11 @@
 		</router-link>
 		<div
 			v-if="!cartIsEmpty"
-			class="h-6 w-6 absolute left-6 top-1/2 transform -translate-y-1/2 flex justify-center items-center bg-secondary rounded-full"
+			class="px-1 py-0.5 absolute left-3 -bottom-1 flex justify-center items-center bg-secondary rounded-full"
 		>
-			<span class="text-xs font-bold text-white">{{ cartSize }}</span>
+			<span class="text-xs font-bold leading-none text-white">{{
+				cartSize
+			}}</span>
 		</div>
 	</li>
 </template>
