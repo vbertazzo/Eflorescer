@@ -8,7 +8,7 @@
 				:title="product.credits"
 			/>
 		</div>
-		<div class="h-32 p-3 flex flex-col justify-between">
+		<div class="h-32 p-3 flex flex-col justify-between xl:h-36">
 			<p class="text-sm md:text-lg">{{ product.name }}</p>
 			<div class="mt-2 flex justify-between items-center">
 				<p class="md:text-lg">{{ formatPrice(product.price) }}</p>

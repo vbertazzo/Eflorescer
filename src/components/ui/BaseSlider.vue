@@ -2,18 +2,18 @@
 	<div>
 		<div>
 			<div
-				class="absolute bottom-0 mx-2 mb-5 px-4 py-3 bg-primary-light bg-opacity-90 shadow-md"
+				class="absolute bottom-0 mx-2 mb-5 px-4 py-3 bg-primary-light bg-opacity-90 shadow-md xl:mb-10 xl:ml-10"
 				:class="{ hidden: imageOnly }"
 			>
-				<h2 class="text-base font-black uppercase text-secondary">
+				<h2 class="text-base font-black uppercase text-secondary xl:text-xl">
 					{{ currentItem.title }}
 				</h2>
-				<p class="mt-1 leading-5 text-secondary">
+				<p class="mt-1 leading-5 text-secondary xl:text-lg">
 					{{ currentItem.subtitle }}
 				</p>
 			</div>
 			<img
-				class="h-64 object-cover object-center md: w-full md:h-80"
+				class="h-64 object-cover object-center md: w-full md:h-80 xl:h-96"
 				:src="currentItem.image"
 				:alt="currentItem.imageAlt"
 				:title="currentItem.credits"
@@ -21,7 +21,7 @@
 		</div>
 		<button
 			@click="previous"
-			class="absolute h-8 w-8 top-1/2 transform -translate-y-1/2"
+			class="absolute h-8 w-8 top-1/2 transform -translate-y-1/2 xl:h-10 xl:w-10"
 		>
 			<svg
 				class="text-secondary hover:text-green-500"
@@ -40,7 +40,7 @@
 		</button>
 		<button
 			@click="next"
-			class="absolute h-8 w-8 top-1/2 right-0 transform -translate-y-1/2 "
+			class="absolute h-8 w-8 top-1/2 right-0 transform -translate-y-1/2 xl:h-10 xl:w-10"
 		>
 			<svg
 				class="text-secondary hover:text-green-500"

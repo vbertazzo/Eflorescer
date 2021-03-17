@@ -1,8 +1,8 @@
 <template>
 	<section class="mt-4 bg-primary-light flex flex-col items-center shadow-md">
 		<div class="container py-4 flex flex-col items-center">
-			<h2 class="text-xl text-center text-secondary">Infusões</h2>
-			<ul class="grid grid-cols-2 gap-4 m-4">
+			<h2 class="text-xl text-center text-secondary xl:text-2xl">Infusões</h2>
+			<ul class="grid grid-cols-2 gap-4 m-4 xl:mt-8 xl:grid-cols-4">
 				<product-item
 					v-for="product in products"
 					:key="product.id"
