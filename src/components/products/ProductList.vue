@@ -22,28 +22,32 @@ const products = [
 		name: 'Rooibos Canela - 50g',
 		image:
 			'https://images.unsplash.com/photo-1603761944806-53219048ca6d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D',
-		price: 30.5
+		price: 30.5,
+		credits: 'Photo by F Almousa (@ba6oo) on Unsplash'
 	},
 	{
 		id: 2,
 		name: 'Rooibos African Sunset - 50g',
 		image:
 			'https://images.unsplash.com/photo-1610137312679-8de3a836b455?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D',
-		price: 34.5
+		price: 34.5,
+		credits: 'Photo by Lucas George Wendt (@lucasgwendt) on Unsplash'
 	},
 	{
 		id: 3,
 		name: 'Chá Vermelho Strawberry Cream - 50g',
 		image:
 			'https://images.unsplash.com/photo-1594136604897-29f7e564db27?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D',
-		price: 32.9
+		price: 32.9,
+		credits: 'Photo by Tea Creative │ Soo Chung (@teacreative) on Unsplash'
 	},
 	{
 		id: 4,
 		name: 'Chá Preto Chai Latte - 50g',
 		image:
 			'https://images.unsplash.com/photo-1591633767356-bbf4d2a3a833?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D',
-		price: 35.9
+		price: 35.9,
+		credits: 'Photo by Tea Creative │ Soo Chung (@teacreative) on Unsplash'
 	}
 ]
 </script>

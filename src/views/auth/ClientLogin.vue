@@ -1,8 +1,10 @@
 <template>
-	<section class="p-8 my-6 bg-primary-light shadow-md">
+	<section
+		class="p-8 my-6 bg-primary-light shadow-md flex flex-col items-center"
+	>
 		<form
 			@submit.prevent="submitForm"
-			class="p-4 flex flex-col justify-center items-center rounded-md bg-white shadow-sm"
+			class="p-4 flex flex-col justify-center items-center rounded-md bg-white shadow-sm md:w-3/4"
 		>
 			<h2 class="text-lg text-center text-secondary">Login</h2>
 			<div class="mt-4 flex flex-col space-y-2">
@@ -24,10 +26,6 @@
 						v-model="password"
 					/>
 				</div>
-				<p v-if="!formIsValid" class="text-sm text-red-700">
-					Por favor, entre com um email e senha (ao menos 6 caracteres) válidos.
-				</p>
-				<p v-if="error">{{ error }}</p>
 			</div>
 			<div class="flex space-x-4">
 				<base-button type="submit" class="mt-8" :disabled="loading">
@@ -57,6 +55,12 @@
 				<base-button class="mt-8" :disabled="loading" link to="/registrar"
 					>Registrar</base-button
 				>
+			</div>
+			<div class="mt-4">
+				<p v-if="!formIsValid" class="text-sm text-red-700">
+					Por favor, entre com um email e senha (ao menos 6 caracteres) válidos.
+				</p>
+				<p v-if="error">{{ error }}</p>
 			</div>
 		</form>
 	</section>

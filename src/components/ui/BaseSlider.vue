@@ -2,7 +2,7 @@
 	<div>
 		<div>
 			<div
-				class="absolute bottom-0 mx-2 mb-5 px-4 py-3  bg-primary-light bg-opacity-90 shadow-md"
+				class="absolute bottom-0 mx-2 mb-5 px-4 py-3 bg-primary-light bg-opacity-90 shadow-md"
 				:class="{ hidden: imageOnly }"
 			>
 				<h2 class="text-base font-black uppercase text-secondary">
@@ -13,9 +13,10 @@
 				</p>
 			</div>
 			<img
-				class="h-64 object-cover object-center"
+				class="h-64 object-cover object-center md: w-full md:h-80"
 				:src="currentItem.image"
 				:alt="currentItem.imageAlt"
+				:title="currentItem.credits"
 			/>
 		</div>
 		<button

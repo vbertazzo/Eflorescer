@@ -1,7 +1,9 @@
 <template>
 	<li class="mt-4 p-4 flex flex-col rounded-md bg-white shadow-sm">
 		<div class="flex items-center">
-			<div class="h-24 w-24 flex-shrink-0 rounded-md overflow-hidden">
+			<div
+				class="h-24 w-24 flex-shrink-0 rounded-md overflow-hidden md:h-28 md:w-28"
+			>
 				<img
 					class="h-full w-full object-cover object-center"
 					:src="product.image"
@@ -10,7 +12,7 @@
 			</div>
 			<div class="ml-4 flex flex-col w-full">
 				<h3>{{ product.name }}</h3>
-				<p class="text-xs font-light">Cód. 4400 | Ref. 42033</p>
+				<p class="mt-1 text-xs font-light">Cód. 4400 | Ref. 42033</p>
 				<div class="mt-4 flex items-end justify-between">
 					<div class="flex flex-col items-center">
 						<label class="text-sm" for="quantity">Quantidade:</label>

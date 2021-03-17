@@ -5,9 +5,11 @@
 			alt="Eflorescer Logo"
 			title="Eflorescer - Chás e Infusões"
 		/>
-		<div class="h-16 mt-4 mx-8 flex justify-evenly items-center space-x-8">
+		<div
+			class="h-16 mt-2 mx-8 flex justify-evenly items-center space-x-8 md:space-x-4"
+		>
 			<svg
-				class="h-12 w-12 text-secondary hover:text-green-500 cursor-pointer"
+				class="h-12 w-12 text-secondary hover:text-primary-dark cursor-pointer md:h-8 md:w-8"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 41.734 41.736"
 				stroke="currentColor"
@@ -29,7 +31,7 @@
 				</g>
 			</svg>
 			<svg
-				class="h-12 w-12 text-secondary hover:text-green-500 cursor-pointer"
+				class="h-12 w-12 text-secondary hover:text-primary-dark cursor-pointer md:h-8 md:w-8"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 22.448 48.31"
 				stroke="currentColor"
@@ -41,7 +43,7 @@
 				/>
 			</svg>
 			<svg
-				class="h-12 w-12 text-secondary hover:text-green-500 cursor-pointer"
+				class="h-12 w-12 text-secondary hover:text-primary-dark cursor-pointer md:h-8 md:w-8"
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox="0 0 40 32.549"
 				stroke="currentColor"
@@ -53,7 +55,7 @@
 				/>
 			</svg>
 			<svg
-				class="h-12 w-12 text-secondary hover:text-green-500 cursor-pointer"
+				class="h-12 w-12 text-secondary hover:text-primary-dark cursor-pointer md:h-8 md:w-8"
 				viewBox="0 0 512 512"
 				xmlns="http://www.w3.org/2000/svg"
 				stroke="currentColor"
@@ -65,7 +67,7 @@
 				/>
 			</svg>
 		</div>
-		<div class="my-4 flex space-x-4">
+		<div class="my-2 flex space-x-4">
 			<div class="w-32 flex flex-col">
 				<h4 class="text-secondary">Endereço</h4>
 				<p class="text-sm text-secondary">
@@ -75,7 +77,7 @@
 			<div class="flex flex-col">
 				<div>
 					<p class="text-secondary">Formas de Pagamento</p>
-					<div class="mt-1 flex justify-center space-x-2">
+					<div class="mt-1 flex justify-center space-x-4">
 						<svg
 							class="h-10 w-10"
 							xmlns="http://www.w3.org/2000/svg"

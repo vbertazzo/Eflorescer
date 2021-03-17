@@ -1,11 +1,13 @@
 <template>
-	<section class="my-6 mx-6 flex flex-col justify-center items-center">
+	<section
+		class="my-6 mx-6 flex flex-col justify-center items-center bg-white md:flex-row md:p-4"
+	>
 		<img
-			class="mx-8 w-60 object-contain"
+			class="mx-8 w-60 object-contain md:w-68"
 			src="../assets/TeaDraw@2x.png"
 			alt="Amigas bebendo chá"
 		/>
-		<div class="mx-8 mt-8 flex flex-col justify-center ">
+		<div class="mx-8 mt-8 flex flex-col justify-center md:mt-0">
 			<h3 class="text-xl font-serif">Você sabia?</h3>
 			<p class="mt-2 text-sm font-light tracking-wider">
 				O Rooibos tem-se tornado popular devido ao seu alto nível de

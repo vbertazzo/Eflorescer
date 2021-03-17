@@ -1,16 +1,17 @@
 <template>
-	<li class="bg-white flex flex-col rounded-b-md shadow-sm">
-		<div class="rounded-t-md overflow-hidden">
+	<li class="bg-white flex flex-col rounded-b-md shadow-sm md:w-56">
+		<div class="relative rounded-t-md overflow-hidden">
 			<img
-				class="h-36 object-cover object-center"
+				class="h-36 object-cover object-center md: w-full"
 				:src="product.image"
 				:alt="product.name"
+				:title="product.credits"
 			/>
 		</div>
 		<div class="h-32 p-3 flex flex-col justify-between">
-			<p class="text-sm">{{ product.name }}</p>
+			<p class="text-sm md:text-lg">{{ product.name }}</p>
 			<div class="mt-2 flex justify-between items-center">
-				<p>{{ formatPrice(product.price) }}</p>
+				<p class="md:text-lg">{{ formatPrice(product.price) }}</p>
 				<base-button
 					mode="symbol"
 					title="Adicionar ao carrinho"

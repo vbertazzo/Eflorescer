@@ -2,7 +2,7 @@
 	<li class="relative">
 		<router-link to="/carrinho" title="Abrir carrinho">
 			<svg
-				class="h-6 w-6 text-secondary hover:text-green-500"
+				class="h-6 w-6 text-secondary hover:text-primary-dark"
 				xmlns="http://www.w3.org/2000/svg"
 				fill="none"
 				viewBox="0 0 24 24"
