@@ -2,7 +2,7 @@
 	<header
 		class="w-full h-16 px-3 flex justify-center items-center bg-primary border-b-4 border-secondary"
 	>
-		<nav class="w-11/12 m-auto flex justify-between items-center">
+		<nav class="w-10/12 m-auto flex justify-between items-center">
 			<router-link to="/">
 				<img
 					:src="Logo"
@@ -29,45 +29,13 @@
 						</svg>
 					</router-link>
 				</li>
-				<li>
-					<router-link to="/carrinho" title="Abrir carrinho">
-						<svg
-							class="h-6 w-6 text-secondary hover:text-green-500"
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								stroke-width="2"
-								d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"
-							/>
-						</svg>
-					</router-link>
-				</li>
-				<li class="text-secondary cursor-pointer" title="Abrir menu">
-					<svg
-						class="h-6 w-6 text-secondary hover:text-green-500"
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke="currentColor"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="2"
-							d="M4 6h16M4 12h16M4 18h16"
-						/>
-					</svg>
-				</li>
+				<cart-icon></cart-icon>
 			</ul>
 		</nav>
 	</header>
 </template>
 
 <script setup>
+import CartIcon from '../cart/CartIcon.vue'
 import Logo from '../../assets/Logo.svg'
 </script>
