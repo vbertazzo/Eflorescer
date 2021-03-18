@@ -15,8 +15,15 @@
 				</p>
 			</div>
 			<img
-				class="h-64 object-cover object-center md: w-full md:h-80 xl:h-96"
+				class="h-64 object-cover object-center w-full md:h-80 xl:h-96"
 				:src="currentItem.image"
+				:srcset="
+					`${currentItem.image}&fit=crop&w=640&q=80 500w,
+					${currentItem.image}&fit=crop&w=768&q=80 768w,
+					${currentItem.image}&fit=crop&w=1024&q=80 1024w,
+					${currentItem.image}&fit=crop&w=1280&q=80 1280w,
+					${currentItem.image}&fit=crop&w=1536&q=80 1536w`
+				"
 				:alt="currentItem.imageAlt"
 				:title="currentItem.credits"
 			/>

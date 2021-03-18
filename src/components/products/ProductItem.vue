@@ -4,6 +4,13 @@
 			<img
 				class="h-36 object-cover object-center md: w-full"
 				:src="product.image"
+				:srcset="
+					`${product.image}&fit=crop&w=640&q=80 500w,
+					${product.image}&fit=crop&w=768&q=80 768w,
+					${product.image}&fit=crop&w=1024&q=80 1024w,
+					${product.image}&fit=crop&w=1280&q=80 1280w,
+					${product.image}&fit=crop&w=1536&q=80 1536w`
+				"
 				:alt="product.name"
 				:title="product.credits"
 			/>
