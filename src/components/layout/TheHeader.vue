@@ -5,8 +5,8 @@
 		<nav class="w-10/12 m-auto flex justify-between items-center 2xl:w-8/12">
 			<router-link to="/">
 				<img
+					class="h-12"
 					src="../../assets/Logo.png"
-					srcset="../../assets/Logo.png 1x, ../../assets/Logo@2x.png 2x"
 					alt="Eflorescer Logo"
 					title="Eflorescer - Chás e Infusões"
 				/>
