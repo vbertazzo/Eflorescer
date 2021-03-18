@@ -1,7 +1,8 @@
 <template>
 	<footer class="py-4 flex flex-col items-center bg-primary">
 		<img
-			:src="Logo"
+			src="../../assets/Logo.png"
+			srcset="../../assets/Logo.png 1x, ../../assets/Logo@2x.png 2x"
 			alt="Eflorescer Logo"
 			title="Eflorescer - Chás e Infusões"
 		/>
@@ -158,6 +159,4 @@
 	</footer>
 </template>
 
-<script setup>
-import Logo from '../../assets/Logo.svg'
-</script>
+<script setup></script>
